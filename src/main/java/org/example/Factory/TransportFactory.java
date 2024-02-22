@@ -8,7 +8,7 @@ public class TransportFactory {
             case "Car" -> CarFactory.creteCar();
             case "Bicycle" -> BicycleFactory.createBicicl();
             case "Bus" -> BusFactory.createBus();
-            default -> throw new IllegalArgumentException("Иди нахуй");
+            default -> throw new IllegalArgumentException("Unexpected value");
         };
     }
 }
